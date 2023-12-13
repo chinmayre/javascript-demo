@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Input</title>
+    <link rel="stylesheet" href="../CSS/event_input.css" />
+  </head>
+  <body>
+    <div>
+      <label for="num1">First Number: </label>
+      <input type="number" id="num1" class="num1" />
+    </div>
+    <div>
+      <label for="num2">Second Number: </label
+      ><input type="number" id="num2" class="num2" />
+    </div>
+    <div>
+      <label for="num3">Result: </label>
+      <input type="number" id="num3" class="num3" onblur="division()" />
+      <!-- <input type="number" id="num3" class="num3" onfocus="division()" /> -->
+    </div>
+
+    <script src="../JS/event_input.js"></script>
+  </body>
+</html>

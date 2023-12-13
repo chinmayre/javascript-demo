@@ -1,0 +1,55 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transform-origin: top;
+  transform: rotateZ(-45deg);
+  animation: rotatePendulum 4s infinite alternate-reverse;
+}
+
+.rope {
+  height: 200px;
+  width: 5px;
+  background-color: crimson;
+  animation: changeColor 4s alternate-reverse infinite;
+  /* position: absolute;
+  top: 0;
+  left: 50%; */
+}
+
+.circle {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  border: 2px solid black;
+  background-color: #000;
+  animation: changeColor 4s alternate-reverse infinite;
+}
+
+.color_outer_div {
+  display: flex;
+  justify-content: center;
+  margin: 1%;
+}
+
+.color1_label {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.submit_btn {
+  margin: 2%;
+  padding: 2%;
+  background-color: burlywood;
+  font-weight: bold;
+}
+
+@keyframes rotatePendulum {
+  from {
+    transform: rotateZ(45deg);
+  }
+  to {
+    transform: rotateZ(-45deg);
+  }
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pendulum</title>
+    <link rel="stylesheet" href="../CSS/pendulum.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="rope"></div>
+      <div class="circle" id="circle"></div>
+    </div>
+    <br />
+    <div>
+      <div class="color_outer_div">
+        <label for="color1" class="color1_label">Color 1: </label>
+        <input type="color" id="color1" class="color1" />
+      </div>
+      <br />
+      <div class="color_outer_div">
+        <label for="color2" class="color1_label">Color 2: </label>
+        <input type="color" id="color2" class="color2" />
+      </div>
+      <div class="color_outer_div">
+        <button onclick="colorChange()" class="submit_btn">Submit</button>
+      </div>
+    </div>
+    <script src="../JS/pendulum.js"></script>
+  </body>
+</html>
